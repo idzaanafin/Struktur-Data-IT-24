@@ -209,15 +209,18 @@ int main() {
     } while (input_text.length() != 16);
 
     
-    // Append characters from input_text using a loop
+    
     for (char c : input_text) {
         text.append(c);
     }
 
-    // Cetak linked list
+    
   //  text.print();
+    cout << "Plaintext: ";
+    text.print();
     cout << "SubBytes: ";
     text.subBytes(sbox);
+    text.print();
     cout << "Before reverse sublist: ";
     text.print();
     text.shiftRows();
